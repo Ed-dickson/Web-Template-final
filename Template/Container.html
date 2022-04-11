@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bef8063778.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Landing Page</title>
+</head>
+
+<style type="text/css">
+    .autohide{
+      position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+    .scrolled-down{
+      transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+      transform:translateY(0); transition: all 0.3s ease-in-out;
+    }
+
+   
+</style>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		el_autohide = document.querySelector('.autohide');
+		
+		// add padding-top to bady (if necessary)
+		navbar_height = document.querySelector('.navbar').offsetHeight;
+		document.body.style.paddingTop = navbar_height + 'px';
+
+		if(el_autohide){
+			
+			var last_scroll_top = 0;
+			window.addEventListener('scroll', function() {
+	       		let scroll_top = window.scrollY;
+		       if(scroll_top < last_scroll_top) {
+		            el_autohide.classList.remove('scrolled-down');
+		            el_autohide.classList.add('scrolled-up');
+		        }
+		        else {
+		            el_autohide.classList.remove('scrolled-up');
+		            el_autohide.classList.add('scrolled-down');
+		        }
+		        last_scroll_top = scroll_top;
+			}); 
+		}
+	}); 
+</script>
+
+<body>
+    
+    <!--Nav Bar-->
+    <div>
+      <div id="navbar">
+        <nav class="autohide navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-lg my-5" style="font-size: 12px;">
+                <img src="./Newdevz-Website templates/Logo.png" alt="">
+                <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">  
+                  <span class="navbar-toggler-icon"></span>
+                    </button>
+                    </div>
+                      
+                  
+                  <div class="collapse navbar-collapse fw-bold" id="main_nav">
+                      <ul class="navbar-nav ms-auto" style="font-family:'Lato', sans-serif;">
+                      <li class="nav-item me-4"><a class="nav-link" href="#"> HOME </a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="#"> ABOUT </a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="#"> WORKS </a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="#"> BLOG </a></li>
+                      <li class="nav-item me-4"><a class="nav-link" href="#"> CONTACT </a></li>
+                      </ul>
+                      <span><i class="fa-solid fa-magnifying-glass"></i> </span>
+                  </div> 
+                    
+                    
+                  </div>
+          </nav>
+      </div>
+  </div>
+    <!--/Nav Bar-->
+
+    <section id="home">
+        <div class="container-lg my-5 ">
+          <div class="row">
+            <div class="col-8">
+              <div class="p5">
+                <div class="" style="font-family: 'Red Hat Display', sans-serif; font-size: 48px;">
+                  Manifest is a newborn theme.
+                  <p>Clean, simple and fast</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div class="row" style="font-family:'Lato', sans-serif; font-size: 16px;">
+        <div class="col-lg-4 mb-4">
+        <figure class="figure">
+          <img src="./Newdevz-Website templates/Img 01.png" class="figure-img img-fluid" alt="...">
+          <figcaption class="figure-caption">Mixkit inspo</figcaption>
+        </figure>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+        <figure class="figure">
+          <img src="./Newdevz-Website templates/Img 02.png" class="figure-img img-fluid" alt="...">
+          <figcaption class="figure-caption">Adelone</figcaption>
+        </figure>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+        <figure class="figure">
+          <img src="./Newdevz-Website templates/Img 04.png" class="figure-img img-fluid" alt="...">
+          <figcaption class="figure-caption">Dreamy</figcaption>
+        </figure>
+        </div>
+
+        
+      </div>
+      
+    </section>
+
+    <div class="container-lg my-5">
+      <div class="row">
+        <div class="col-sm my-3">
+          <div class="p5 text-dark">
+            <div style="font-size: 23px; font-family: 'Red Hat Display', sans-serif;">
+              Full-time UI/UX designer
+              <p>Head of Design at VeronaLabs.com</p>
+            </div>
+            <i class="bi bi-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="col-sm my-3">
+            <div class="p5 text-dark" style="font-family: 'Lato', sans-serif; font-size: 19px;" >
+                <div>
+                  We work with clients around the world from our headquarters in Charleston, South Carolina.
+                </div>
+                <div class="my-4">
+                  We focus on naming, branding, brand narratives, website design and development, <p class="text-break">and brand experiences.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Latest post-->
+    <div class="container-lg">
+        <div class="row">
+          <div class="col-sm mb-3" style="font-family: 'Red Hat Display', sans-serif; font-size: 23px;">
+            <div class="p5 text-dark"> <h6> Latest Post </h6> </div>
+          </div>
+
+          <div class="col-sm-2 mb-3">
+            <div class="p2 text-dark" style="font-family: 'Lato', sans-serif; font-size: 16px;">
+             <div> View All <i class="bi bi-arrow-right"></i> </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <Div class="row">
+            <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <div class="col-sm-6 col-lg-4 mb-4" style="width: 100;">
+                        <div style="width: 400px">
+                            <img src="./Newdevz-Website templates/Img 01a (1).png" class="card-img-top" alt="...">
+                            <div class="d-flex my-3" style="font-size: 8px;" >Interface design <p class="ms-auto me-1">8 June, 2022</p></div>
+                            <p class="card-text my-3">UX traffic light colours</p>
+                            <div class="my-5" style="font-size: 16px;">
+                                has to make a huge visual difference between warning, an alert and a <p class="text-break">success</p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <div class="col-sm-6 col-lg-4 mb-4" style="width: 100;">
+                        <div style="width: 400px">
+                            <img src="./Newdevz-Website templates/Img 01a (1).png" class="card-img-top" alt="...">
+                            <div class="d-flex my-3" style="font-size: 8px;" >Interface design <p class="ms-auto me-1">2 March, 2022</p></div>
+                            <p class="card-text my-3">Using UX Design to Building a Sustainable Future</p>
+                            <div class="my-4" style="font-size: 16px;">
+                                Transformation has to be driven by everybody, not just by climate groups. <p class="text-break">success</p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                    <div class="card border-0 h-100">
+                        <div class="col-sm-6 col-lg-4 mb-4" style="width: 100;">
+                        <div style="width: 400px">
+                            <img src="./Newdevz-Website templates/Img 01a (1).png" class="card-img-top" alt="...">
+                            <div class="d-flex my-3" style="font-size: 8px;" >Interface design <p class="ms-auto me-1">2 March, 2022</p></div>
+                            <p class="card-text my-3"> Creative vs. UX </p>
+                            <div class="my-5" style="font-size: 16px;">
+                                Transformation has to be driven by everybody, not just by climate groups. <p class="text-break">success</p></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </Div>
+
+    <footer class="text-lg-start text-lg-start bg-light text-muted">
+        <section>
+            <div class="container text-start text-md-start mt-5 py-4">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3  mt-5 mb-4">
+                        <h6 class="text-uppercase fw-dark mb-4"> Need a project? </h6>
+                        <p style="font-size: 16px;"> (234)NewDevz </p>
+                        <p style="font-size: 16px;"> webdev@Newdevz.com </p>
+                    </div>
+      
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-5 mb-4" style="font-size: 16px;">
+                        <p> <a href="#!" class="text-reset">Facebook</a> </p>
+                        <p> <a href="#!" class="text-reset">Instagram</a> </p>
+                        <p> <a href="#!" class="text-reset">Dribble</a> </p>
+                        <p> <a href="#!" class="text-reset">Linkedin</a> </p>
+                    </div>
+              
+                    <div class="col-md-4 col-lg-3 col-xl-3 my-5 mb-md-4 mb-4" style="font-size: 16px;"> 
+                        <p>© Copyright Newdevz. All rights reserved</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </footer>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</body> 
+</html>

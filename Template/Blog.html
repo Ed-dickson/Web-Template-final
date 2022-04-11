@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bef8063778.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Blog</title>
+</head>
+<!--Nav styling-->
+<style type="text/css">
+    .autohide{
+      position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+    .scrolled-down{
+      transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+      transform:translateY(0); transition: all 0.3s ease-in-out;
+    }
+</style>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		el_autohide = document.querySelector('.autohide');
+		
+		// add padding-top to bady (if necessary)
+		navbar_height = document.querySelector('.navbar').offsetHeight;
+		document.body.style.paddingTop = navbar_height + 'px';
+
+		if(el_autohide){
+			
+			var last_scroll_top = 0;
+			window.addEventListener('scroll', function() {
+	       		let scroll_top = window.scrollY;
+		       if(scroll_top < last_scroll_top) {
+		            el_autohide.classList.remove('scrolled-down');
+		            el_autohide.classList.add('scrolled-up');
+		        }
+		        else {
+		            el_autohide.classList.remove('scrolled-up');
+		            el_autohide.classList.add('scrolled-down');
+		        }
+		        last_scroll_top = scroll_top;
+			}); 
+		}
+	}); 
+</script>
+<!--Nav styling-->
+
+<body>
+    
+    <!--Nav Bar-->
+    <div>
+        <div id="navbar">
+            <nav class="autohide navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-lg my-5" style="font-size: 12px;">
+                    <img src="./Newdevz-Website templates/Logo.png" alt="">
+                    <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">  
+                      <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                        
+                    
+                    <div class="collapse navbar-collapse fw-bold" id="main_nav">
+                        <ul class="navbar-nav ms-auto" style="font-family:'Lato', sans-serif;">
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> HOME </a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> ABOUT </a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> WORKS </a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> BLOG </a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="#"> CONTACT </a></li>
+                        </ul>
+                        <span><i class="fa-solid fa-magnifying-glass"></i> </span>
+                    </div> 
+                      
+                      
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <!--/Nav Bar-->
+
+    <section id="Blog">
+            <div class="container-lg my-5 ">
+              <div class="row">
+                <div class="col-8">
+                  <div class="p5">
+                    <div class="display-6 fw-normal">
+                      Blog
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <section>
+                <div class="div container-lg">
+                    <div class="row justify-content-start">
+                        <div class="div col-md-5 text-start">
+                            <img class="img-fluid pe-2" src="./Newdevz-Website templates/blog img.png" alt=""></div>
+                        <div class="col-md-5 text-start text-md-start">
+                            <p class="mt-5 text-muted" style="font-size: 8px;"> Technology, Interface Design</p>
+                            <p class="" style="font-size: 23px;"> Using UX Design to Build a Sustainable Future</p>
+                            <p class="mb-5 text-muted" style="font-size: 12px;"> 6 May, 2020</p>
+                            <p class="mb-5 pb-2" style="font-size: 12px;"> Transformation has to be tdriven by everybody, not just by climate groups and we have a responsibility to use out influence to drive this</p>
+                            <p class="" style="font-size: 12px;">1  2  3</p>
+                        </div>
+    
+                        <div class="d-flex my-3 me-5">Categories <p class="ms-5 ps-5" >2 March, 2022</p></div>
+                    </div>
+                </div>
+            </section> 
+    
+            <div class="container">
+                
+                <Div class="row">
+                    
+        
+                    
+                </div>
+            </Div>
+    
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                    <figure class="figure">
+                      <img src="./Newdevz-Website templates/i.png" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption d-flex justify-content-between" style="font-size: 12px; font-family: 'Red Hat Display', sans-serif;">
+                        <p>Interface design</p>
+                        <p>2 March, 2022</p>
+                      </figcaption>
+                      <p style="font-size: 23px; font-family: 'Red Hat Display', sans-serif;"> UX traffic light colours</p>
+                      <p style="font-size: 16px; font-family: 'Lato', sans-serif;"> has to make a huge visual difference between warning, an alert and a success</p>
+                    </figure>
+                    </div>
+            
+                    <div class="col-lg-6 mb-4">
+                    <figure class="figure">
+                      <img src="./Newdevz-Website templates/i.png" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption d-flex justify-content-between" style="font-size: 12px; font-family: 'Red Hat Display', sans-serif;">
+                        <p>Visual design, Technology</p>
+                        <p>8 June, 2022</p>
+                      </figcaption>
+                      <p style="font-size: 23px; font-family: 'Red Hat Display', sans-serif;"> Understanding users by going beyond personas, demographics, and affinity groups</p>
+                      <p style="font-size: 16px; font-family: 'Lato', sans-serif;"> Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want</p>
+                    </figure>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                    <figure class="figure">
+                      <img src="./Newdevz-Website templates/i.png" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption d-flex justify-content-between" style="font-size: 12px; font-family: 'Red Hat Display', sans-serif;">
+                        <p>Interface design</p>
+                        <p>8 March, 2020</p>
+                      </figcaption>
+                      <p style="font-size: 23px; font-family: 'Red Hat Display', sans-serif;"> Mentorship Match — How a simple LinkedIn feature can boost diversity</p>
+                      <p style="font-size: 16px; font-family: 'Lato', sans-serif;"> LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand</p>
+                    </figure>
+                    </div>
+                
+                    <div class="col-lg-6 mb-4">
+                    <figure class="figure">
+                      <img src="./Newdevz-Website templates/i.png" class="figure-img img-fluid" alt="...">
+                      <figcaption class="figure-caption d-flex justify-content-between" style="font-size: 12px; font-family: 'Red Hat Display', sans-serif;">
+                        <p>Interface design</p>
+                        <p>2 March, 2022</p>
+                      </figcaption>
+                      <p style="font-size: 23px; font-family: 'Red Hat Display', sans-serif;">Creativity vs. UX</p>
+                      <p style="font-size: 16px; font-family: 'Lato', sans-serif;"> Is it possible to create a delightful user experience without following best UX practices?</p>
+                    </figure>
+                    </div>
+            
+                    
+                    
+                  </div>
+            </div>
+            
+
+            <div class="my-3 d-flex justify-content-center">
+                <button type="submit" class=" btn btn-secondary rounded-0 px-4" style="font-size: 16px;"> Load More </i></button>
+                    
+            </div>
+    </section>
+    
+
+    <footer class="text-lg-start text-lg-start bg-light text-muted">
+        <section>
+            <div class="container  text-md-start py-4">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3  my-5 mb-4">
+                        <h6 class="text-uppercase fw-dark mb-4"> Need a project? </h6>
+                        <p style="font-size: 16px;"> (234)NewDevz </p>
+                        <p style="font-size: 16px;"> webdev@Newdevz.com </p>
+                    </div>
+      
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-5 mb-4" style="font-size: 16px;">
+                        <p> <a href="#!" class="text-reset">Facebook</a> </p>
+                        <p> <a href="#!" class="text-reset">Instagram</a> </p>
+                        <p> <a href="#!" class="text-reset">Dribble</a> </p>
+                        <p> <a href="#!" class="text-reset">Linkedin</a> </p>
+                    </div>
+              
+                    <div class="col-md-4 col-lg-3 col-xl-3 my-5 mb-md-4 mb-4" style="font-size: 16px;"> 
+                        <p>© Copyright Newdevz. All rights reserved</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </footer>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</body> 
+</html>

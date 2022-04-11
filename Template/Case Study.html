@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bef8063778.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Case Study</title>
+</head>
+
+<style type="text/css">
+    .autohide{
+      position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+    .scrolled-down{
+      transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+      transform:translateY(0); transition: all 0.3s ease-in-out;
+    }
+
+   
+</style>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		el_autohide = document.querySelector('.autohide');
+		
+		// add padding-top to bady (if necessary)
+		navbar_height = document.querySelector('.navbar').offsetHeight;
+		document.body.style.paddingTop = navbar_height + 'px';
+
+		if(el_autohide){
+			
+			var last_scroll_top = 0;
+			window.addEventListener('scroll', function() {
+	       		let scroll_top = window.scrollY;
+		       if(scroll_top < last_scroll_top) {
+		            el_autohide.classList.remove('scrolled-down');
+		            el_autohide.classList.add('scrolled-up');
+		        }
+		        else {
+		            el_autohide.classList.remove('scrolled-up');
+		            el_autohide.classList.add('scrolled-down');
+		        }
+		        last_scroll_top = scroll_top;
+			}); 
+		}
+	}); 
+</script>
+
+<body>
+    
+    <!--Nav Bar-->
+    <div>
+        <div id="navbar">
+            <nav class="autohide navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-lg my-5" style="font-size: 12px;">
+                    <img src="./Newdevz-Website templates/Logo.png" alt="">
+                    <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">  
+                      <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                        
+                    
+                    <div class="collapse navbar-collapse fw-bold" id="main_nav">
+                        <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#"> HOME </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> ABOUT </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> WORKS </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> BLOG </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> CONTACT </a></li>
+                        </ul>
+                        <span><i class="fa-solid fa-magnifying-glass"></i> </span>
+                    </div> 
+                      
+                      
+                    </div>
+            </nav>
+        </div>
+    </div>
+    <!--/Nav Bar-->
+
+    <section class="my-5">
+        <div class="div container-lg">
+            <div class="row justify-content-start">
+                <div class="div col-md-6 text-start">
+                    <h6 class="" style="font-size: 16px; font-family: 'Lato', sans-serif;"> CASE STUDY</h6>
+                    <p class="display-6 fw-normal my-5">A Fashion Platform</p>
+                </div>
+                <img src="./Newdevz-Website templates/b.png" class="mb-5 pb-2"  alt="">
+            </div>
+        </div>
+    </section> 
+
+    <section class="my-5">
+        <div class="div container-lg">
+            <div class="row justify-content-start">
+                <div class="div col-md-6 text-start">
+                    <h5 style="font-size: 23px; font-family: 'Lato', sans-serif;">Project Overview</h5>
+                <div class="text-muted" style="font-size: 19px;font-family: 'Lato', sans-serif;">
+                    <p class="mt-5">FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin, currently operated by Siesly and her sister Ashely. They needed help for a big rebrand and wanted to relaunch their website.</p>
+                    <p class="my-4">Their goals were simple, create a unique e-commerce store that bring a wonderful shopping experience at every stage of the buyer’s journey.</p>
+                </div>
+                </div>
+                
+                <div class="col-md-6  col-lg-6 text-start text-md-start">
+                    <p class="ms-5 ps-5" style="font-size: 19px;"> Year <br class="text-muted"> 2019</br></p>
+                    <p class="my-3 ms-5 ps-5" style="font-size: 19px;"> Platform <br class="text-muted"> Spotify, Webflow</br></p>
+                    <p class="my-3 ms-5 ps-5" style="font-size: 19px;"> Role <br class="text-muted"> Research, Design</br></p>
+                    <p class="my-3 ms-5 ps-5" style="font-size: 19px;"> Deliverables <br class="text-muted"> www.fashhanger.com</br></p>
+                
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="my-5">
+        <div class="div container-lg">
+            <div class="row justify-content-start">
+                <div class="div col-md-6 text-start">
+                    <p class="fw-normal my-4" style="font-size: 23px;">User Research and Personas</p>
+                </div>
+                <img src="./Newdevz-Website templates/d.png" class="mb-5 pb-2"  alt="">
+                <p class="text-muted" style="font-size: 19px;" >Who is your user? Indicate her KEY personality traits and help round out her overall image.</p>
+                <p class="text-muted" style="font-size: 19px;">Originally, the personality section of this persona was based off the Myers Briggs personality test. According to the Myers Briggs, there are 16 potential user personality types. Our template integrates questions from this online personality test example into a series of sliding bar graphics. If you’re confused as to what the sliders mean, check out the Myers Briggs basics article.</p>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class="my-5">
+        <div class="div container-lg">
+            <div class="row justify-content-start">
+                <div class="div col-md-6 text-start">
+                    <p class="fw-normal mt-5 mb-4" style="font-size: 23px;">Initial Sketches</p>
+                </div>
+                <img src="./Newdevz-Website templates/a.png" class="mb-5 pb-2"  alt="">
+                <p class="text-muted" style="font-size: 19px;" >In the beginning, It’s just about brainstorming.</p>
+                <p class="text-muted" style="font-size: 19px;">I list out a jumble of words and draw tiny sketches related to what I’m working on (and find the parallels later). Personally, I prefer paper with a grid so I can convey things responsively. Most of the time perfection isn’t an issue and the sketches are just for me.</p>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class="my-5">
+        <div class="div container-lg">
+            <div class="row justify-content-start">
+                <div class="div col-md-6 text-start">
+                    <p class="fw-normal mt-5 mb-4" style="font-size: 23px;">Final Design</p>
+                </div>
+                <img src="./Newdevz-Website templates/c.png" class="mb-4 pb-2"  alt="">
+                <p class="text-muted mb-5" style="font-size: 19px;">I played with adding a wireframe of the website flow that would lead you in to each screen. For each of those screens I added a floating footer that allows users to see where they are in that particular flow and jump around as needed.” We’re digging this InVision-made wireframe.</p>
+                
+            </div>
+        </div>
+    </section> 
+
+
+    <footer class="text-lg-start text-lg-start bg-light text-muted padding-top-5">
+        <section>
+            <div class="container text-start text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3  my-5 mb-4">
+                        <h6 class="text-uppercase fw-dark mb-4"> Need a project? </h6>
+                        <p style="font-size: 16px;"> (234)NewDevz </p>
+                        <p style="font-size: 16px;"> webdev@Newdevz.com </p>
+                    </div>
+      
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-5 mb-4" style="font-size: 16px;">
+                        <p> <a href="#!" class="text-reset">Facebook</a> </p>
+                        <p> <a href="#!" class="text-reset">Instagram</a> </p>
+                        <p> <a href="#!" class="text-reset">Dribble</a> </p>
+                        <p> <a href="#!" class="text-reset">Linkedin</a> </p>
+                    </div>
+              
+                    <div class="col-md-4 col-lg-3 col-xl-3 my-5 mb-md-4 mb-4" style="font-size: 16px;"> 
+                        <p><i class="fas me-3"></i> © Copyright Newdevz. All rights reserved</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </footer>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+</body> 
+</html>
